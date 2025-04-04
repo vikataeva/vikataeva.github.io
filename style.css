@@ -115,12 +115,12 @@ body {
   }
 
   .text-box {
-    background-color: #fff0f5; /* soft feminine pink */
+    background-color: #fff0f5; 
     padding: 20px 30px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 30px auto; /* centers it */
+    margin: 30px auto;
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -158,11 +158,10 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* allows it to wrap on small screens */
+    flex-wrap: wrap;
     margin-top: 40px;
   }
   
-  /* Individual card style */
   .resource-card {
     background-color: #fff8fc;
     border-radius: 12px;
@@ -177,7 +176,6 @@ body {
     transform: translateY(-5px);
   }
   
-  /* Image styling */
   .resource-card img {
     width: 50px;
     height: 50px;
@@ -185,7 +183,6 @@ body {
     margin-bottom: 10px;
   }
   
-  /* Link styling */
   .resource-card a {
     display: block;
     font-weight: 700;
@@ -199,8 +196,41 @@ body {
     color: #e06291;
   }
   
-  /* Paragraph styling */
   .resource-card p {
     font-size: 0.95rem;
     color: #555;
+  }
+
+  .project-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .project-table th {
+    background-color: #fce4ec;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .project-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    vertical-align: top;
+  }
+  
+  .project-table img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+  }
+  
+  .project-table p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
   }

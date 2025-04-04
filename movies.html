@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My favourite movies</title>
+        <link href="style.css" rel="stylesheet"> <!-- I am linking the CSS file to the HTML file -->
+        <title>My projects</title>
     </head>
-    <body>
-        <nav>
-            <ul style="display: flex; list-style: none; padding: 0; margin: 0;">
-                <li style="margin-right: 20px;"><a href="index.html">Home</a></li>
-                <li style="margin-right: 20px;"><a href="reasons.html">Reasons</a></li>
-                <li style="margin-right: 20px;"><a href="hobbies.html">My hobbies</a></li>
-                <li style="margin-right: 20px;"><a href="websites.html">My favorite websites</a></li>
-            </ul>
+    <header>
+        <div class="container">
+        <div class="logo">
+            <img src="vickin.png" alt="My Logo" width="140"> <!-- I am using my logo for this lab -->
+        </div>
+        <nav class ="navbar">
+                <a href="index.html">Home</a><!-- I am using a list to show the links to other pages -->
+                <a href="hobbies.html">My background</a>
+                <a href="websites.html">My inspiration</a>
+                <a href="movies.html">My projects</a>
         </nav>
-        <h1>My favourite movies</h1> <!--Comment: I am using a table to show my favourite movies-->
-        <table style="border: 1px solid black; border-collapse: collapse;"> <!--Comment: I am using a table to show my favourite movies-->
-            <div>
-                <h3>Here are some of my favourite movies in different genres:</h3>
+        </div>
+    </header>
+    <body>
+        <h1>My projects</h1> <!--Comment: I am using a table to show my projects-->
+        <h3>Here are some of the logos I created </h3>
+        <table class="project-table">
+          <thead>
             <tr>
-                <th style="padding: 12px; border: 1px solid black;">Genre</th>
-                <th style="padding: 12px; border: 1px solid black;">Movie</th>
-                <th style="padding: 12px; border: 1px solid black;">Year</th>
-                <th style="padding: 12px; border: 1px solid black;">Poster</th>
-                <th style="padding: 12px; border: 1px solid black;">Synopsis</th>
+              <th>Project</th>
+              <th>Description</th>
             </tr>
-            <tr style="padding: 12px; border: 1px solid black;">
-                <td>Comedy</td>
-                <td>Mean Girls</td>
-                <td>2004</td>
-                <td><img src="https://m.media-amazon.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_FMjpg_UX1000_.jpg" width="100" alt="Mean Girls"></td>
-                <td style="padding: 12px; margin: 12px;">Teenage Cady Heron was educated in Africa by her scientist parents. When her family moves to the suburbs of Illinois, Cady finally gets to experience public school and gets a quick primer on the cruel, tacit laws of popularity that divide her fellow students into tightly knit cliques. She unwittingly finds herself in the good graces of an elite group of cool students dubbed "the Plastics," but Cady soon realizes how her shallow group of new friends earned this nickname.</td>
-            </tr>
-            <tr style="padding: 12px; border: 1px solid black;">
-                <td>Horror</td>
-                <td>Sinister</td>
-                <td>2012</td>
-                <td><img src="https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_FMjpg_UX1000_.jpg" width="100" alt="Sinister"></td>
-                <td style="padding: 12px; margin: 12px;">True-crime writer Ellison Oswald is in a slump; he hasn't had a best seller in more than 10 years and is becoming increasingly desperate for a hit. So, when he discovers the existence of a snuff film showing the deaths of a family, he vows to solve the mystery. He moves his own family into the victims' home and gets to work. However, when old film footage and other clues hint at the presence of a supernatural force, Ellison learns that living in the house may be fatal.</td>
-            </tr>
-            <tr style="padding: 12px; border: 1px solid black;">
-                <td>Sci-Fi</td>
-                <td>Interstellar</td>
-                <td>2014</td>
-                <td><img src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" width="100" alt="Interstellar"></td>
-                <td style="padding: 12px; margin: 12px;"> In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand, a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.</td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="ski.png" alt="Ski Logo">
+              </td>
+              <td>
+                <p>This logo was designed for the Sakhalin Ski Federation with the goal of capturing both the regional identity and the essence of winter sports. The design incorporates the distinctive shapes of Sakhalin Island and the Kuril Islands to ground the logo in its geographic context. A monochromatic color palette, inspired by the flag of the region, was used to maintain a clean, cohesive aesthetic. I integrated ski trail marks into the design, along with a snowflake to evoke a sense of winter and movement.</p>
+              </td>
             </tr>
             <tr>
-                <td>Thriller</td>
-                <td>Shutter Island</td>
-                <td>2010</td>
-                <td><img src="https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" width="100" alt="Shutter Island"></td>
-                <td style="padding: 12px; margin: 12px;"> The implausible escape of a brilliant murderess brings U.S. Marshal Teddy Daniels (Leonardo DiCaprio) and his new partner (Mark Ruffalo) to Ashecliffe Hospital, a fortress-like insane asylum located on a remote, windswept island. The woman appears to have vanished from a locked room, and there are hints of terrible deeds committed within the hospital walls. As the investigation deepens, Teddy realizes he will have to confront his own dark fears if he hopes to make it off the island alive.</td>
+              <td>
+                <img src="vickin.png" alt="VICKIN Logo">
+              </td>
+              <td>
+                <p>This logo was developed as part of an identity design assignment, with the objective of creating a minimalistic mark that reflects my personality and approach as a designer. I chose to represent myself through a simplified outline of my head, incorporating key features such as a friendly, inviting smile and the distinctive shape of my curly hair to convey approachability and individuality. The brand name “VICKIN” is included as the central typographic element, representing the personal brand I’m building within the field of graphic design. The choice of pink as the primary color reflects my personal aesthetic and adds a vibrant, playful tone that aligns with my creative identity.</p>
+              </td>
             </tr>
+            <tr>
+              <td>
+                <img src="nina.png" alt="Nina Candle Logo">
+              </td>
+              <td>
+                <p>This logo was created for my aunt’s candle shop, with the objective of conveying a sense of warmth, sensuality, and calm—qualities closely associated with the experience of candlelight. The design utilizes a soothing, warm color palette to evoke feelings of comfort and relaxation, while also reflecting the physical warmth of a lit candle.</p>
+                <p>The branding solution consists of two complementary logo variations: a primary logo featuring the full brand name in an elegant cursive typeface to convey softness and sophistication, and a secondary logo built around a stylized, capitalized letter “N” integrated with candle motifs. This dual approach allows for flexible application across various brand touchpoints, from packaging to social media.</p>
+              </td>
+            </tr>
+          </tbody>
         </table>
     </body>
 </html>
