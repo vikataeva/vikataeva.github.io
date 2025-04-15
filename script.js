@@ -25,8 +25,9 @@ function showMany()
 
 function changeColor() 
 {
-    document.getElementById("main").style.backgroundColor = "blue";
-    element.style.color = "red";
+    const box = document.getElementsByClassName("text-box")[0]; // gets the first element with that class
+    box.style.backgroundColor = "pink";
+    box.style.color = "white";
 }
 
 function changeImage() 
