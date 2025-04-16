@@ -271,3 +271,18 @@ body {
     font-size: 1rem;
     line-height: 1.7;
   }
+
+  #hoverButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e885ba;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #hoverButton:hover {
+    background-color: #fb2f98;
+  }
