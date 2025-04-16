@@ -66,22 +66,6 @@
                     Where this path will lead me, I\’m not entirely sure—but I do know one thing: I’m determined to pursue my passion for graphic design with everything I have.</p>
             </ol>
             </div>
-            <button id="buttonCounter">Click Me</button>
-            <p id="counter">You've clicked 0 times.</p>
-            <script>
-              let count = 0; 
-function buttonCounter() {
-  count = count + 1;
-  const counterParagraph = document.getElementById('counter');
-  counterParagraph.innerHTML = 'You\'ve clicked ' + count + ' times.';
-  if (count % 2 == 0) {
-    counterParagraph.style.color = "blue"; // Even
-  } else {
-    counterParagraph.style.color = "green"; // Odd
-  }
-}
-document.getElementById('buttonCounter').onclick = buttonCounter;
-            </script> 
         </div>
     </body>
 </html>
