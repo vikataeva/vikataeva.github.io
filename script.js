@@ -26,7 +26,7 @@ function showMany()
 function changeColor() 
 {
     const box = document.getElementsByClassName("text-box")[0]; // gets the first element with that class
-    box.style.backgroundColor = "pink";
+    box.style.backgroundColor = "hotpink";
     box.style.color = "white";
 }
 
@@ -34,3 +34,8 @@ function changeImage()
 {
     document.getElementById("catdog").src = "https://c.files.bbci.co.uk/17444/production/_124800359_gettyimages-817514614.jpg";
 }
+
+function showAlert() 
+{
+    alert("More projects coming soon!");    
+  }

@@ -21,19 +21,21 @@
 <body>
         <h1>Welcome to my page</h1>
         <h3>LAB 3</h3>
-        <button onclick="showMessage()">Click me</button> <!-- I am using a button to show a message -->
-       <button onclick="checkAge()">Check your age</button> 
+        <button id="hoverButton" onclick="showMessage()">Click me</button> <!-- I am using a button to show a message -->
+       <button id="hoverButton" onclick="checkAge()">Check your age</button> 
         <div>
-            <img src="profileimage.JPG" alt="AI generated portrait of Victoria Kataeva" width="200" height="200"> <i--Comment: I am using an image of myself for this lab--> 
-        </div>
+           <img id="catdog" src="profileimage.JPG" alt="AI generated portrait of Victoria Kataeva" width="200" height="200"> <i--Comment: I am using an image of myself for this lab--> 
+           <button id="hoverButton" onclick="changeImage()">Change image</button> <!-- I am using a button to change the image -->
+          </div>
         <h3>Hi, my name is Victoria Kataeva </h3>
-        <button onclick="showMany()">Reminder</button>
+        <button id="hoverButton" onclick="showMany()">Reminder</button>
         <div class="text-box">
             <p>
               I am an aspiring graphic designer. I study Graphic Design at 
               <span style="color: red;">SAIT</span>. I want to become a freelance graphic designer 
               and help my clients with branding and social media presence.
             </p>
+            <button id="hoverButton" onclick="changeColor()">Change color</button>
           </div>
         <h3>Learn more about me</h3> <i--Comment: I am using a list to show the links to other pages-->
             <div class="centered-list">
@@ -43,6 +45,5 @@
                   <li><a href="movies.html">My projects</a></li>
                 </ul>
               </div>
-              <button onclick="changeColor()">Change color</button>
 </body>
 </html>
