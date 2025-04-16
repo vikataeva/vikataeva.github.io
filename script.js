@@ -39,3 +39,17 @@ function showAlert()
 {
     alert("More projects coming soon!");    
   }
+
+  let count = 0; 
+
+  function buttonCounter() {
+    count = count + 1;
+    const counterParagraph = document.getElementById('counter');
+    counterParagraph.innerHTML = 'You\'ve clicked ' + count + ' times.';
+    if (count % 2 == 0) {
+      counterParagraph.style.color = "blue"; // Even
+    } else {
+      counterParagraph.style.color = "green"; // Odd
+    }
+  }
+  document.getElementById('buttonCounter').onclick = buttonCounter;

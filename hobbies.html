@@ -63,22 +63,25 @@
 
                     With a hopeful heart, I made the decision to move back to Alberta—this time to Calgary. Here, I began a new chapter, enrolling in the Graphic Design program at SAIT. I'm just finishing up my first semester, but already, it feels right. I’m genuinely enjoying the program, and for the first time in a long while, I feel both creatively fulfilled and confident in the direction I’ve chosen.
                     
-                    Where this path will lead me, I’m not entirely sure—but I do know one thing: I’m determined to pursue my passion for graphic design with everything I have.</p>
+                    Where this path will lead me, I\’m not entirely sure—but I do know one thing: I’m determined to pursue my passion for graphic design with everything I have.</p>
             </ol>
             </div>
             <button id="buttonCounter">Click Me</button>
             <p id="counter">You've clicked 0 times.</p>
             <script>
-                let count = 0;
-                const button = document.getElementById('buttonCounter');
-                const counterDisplay = document.getElementById('counter');
-
-                button.addEventListener('click', () => {
-                    count++;
-                    counterDisplay.textContent = `You've clicked ${count} times.`;
-                });
-            </script>
-            </div>
+              let count = 0; 
+function buttonCounter() {
+  count = count + 1;
+  const counterParagraph = document.getElementById('counter');
+  counterParagraph.innerHTML = 'You\'ve clicked ' + count + ' times.';
+  if (count % 2 == 0) {
+    counterParagraph.style.color = "blue"; // Even
+  } else {
+    counterParagraph.style.color = "green"; // Odd
+  }
+}
+document.getElementById('buttonCounter').onclick = buttonCounter;
+            </script> 
         </div>
     </body>
 </html>
