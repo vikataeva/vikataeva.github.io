@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <script src="script.js"></script>
         <link href="style.css" rel="stylesheet"> <!-- I am linking the CSS file to the HTML file -->
         <title>My Background</title> <i--Comment: I am using a list to show my hobbies--></i--Comment:>
     </head>
@@ -64,5 +65,20 @@
                     
                     Where this path will lead me, I’m not entirely sure—but I do know one thing: I’m determined to pursue my passion for graphic design with everything I have.</p>
             </ol>
+            </div>
+            <button id="buttonCounter">Click Me</button>
+            <p id="counter">You've clicked 0 times.</p>
+            <script>
+                let count = 0;
+                const button = document.getElementById('buttonCounter');
+                const counterDisplay = document.getElementById('counter');
+
+                button.addEventListener('click', () => {
+                    count++;
+                    counterDisplay.textContent = `You've clicked ${count} times.`;
+                });
+            </script>
+            </div>
+        </div>
     </body>
 </html>
