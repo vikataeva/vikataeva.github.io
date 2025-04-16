@@ -41,5 +41,21 @@
               <p>I use Instagram to share my art and photography, and get inspired by others.</p>
             </div>
           </div>
+          <button id="buttonCounter">Click Me</button>
+          <p id="counter">You've clicked 0 times.</p>
+          <script>
+            let count = 0; 
+function buttonCounter() {
+count = count + 1;
+const counterParagraph = document.getElementById('counter');
+counterParagraph.innerHTML = 'You\'ve clicked ' + count + ' times.';
+if (count % 2 == 0) {
+  counterParagraph.style.color = "blue"; // Even
+} else {
+  counterParagraph.style.color = "green"; // Odd
+}
+}
+document.getElementById('buttonCounter').onclick = buttonCounter;
+          </script> 
     </body>
 </html>
